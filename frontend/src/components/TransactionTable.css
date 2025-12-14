@@ -1,0 +1,67 @@
+.table-container {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    /* overflow: hidden; */
+    /* Removing overflow hidden to allow sticky header if needed, but table usually needs overflow-x */
+    /* To match design, the table itself might be full width */
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.transaction-table th {
+    background-color: #f9fafb;
+    /* Light gray header bg */
+    padding: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.transaction-table td {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid #f3f4f6;
+    white-space: nowrap;
+}
+
+.transaction-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.table-loading,
+.table-empty {
+    padding: 3rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+}
